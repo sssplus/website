@@ -1,0 +1,42 @@
+import React from 'react';
+
+const Hero = () => {
+  return (
+    <section className='relative bg-[#003366] overflow-hidden'>
+      <div 
+        className='absolute inset-0 opacity-10'
+        style={{
+          backgroundImage: `linear-gradient(#4A90E2 1px, transparent 1px), linear-gradient(90deg, #4A90E2 1px, transparent 1px)`,
+          backgroundSize: '40px 40px'
+        }}
+      />
+      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 relative z-10'>
+        <div className='max-w-4xl'>
+          <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight'>
+            Precision Interconnect Solutions:<br />
+            From Prototype to Production
+          </h1>
+          <p className='text-xl text-gray-300 mb-8 max-w-2xl'>
+            Custom wire harness and cable assembly manufacturing with uncompromising quality standards for industrial applications
+          </p>
+          <div className='flex flex-col sm:flex-row gap-4'>
+            <a 
+              href='#inquiry'
+              className='inline-flex items-center justify-center px-8 py-4 bg-[#FF5722] text-white font-semibold hover:bg-[#E64A19] transition-colors'
+            >
+              Request Engineering Quote
+            </a>
+            <a 
+              href='#capabilities'
+              className='inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold hover:bg-white hover:text-[#003366] transition-colors'
+            >
+              View Capabilities
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;

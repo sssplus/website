@@ -1,0 +1,33 @@
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import Header from '@/components/Header';
+import Hero from '@/components/Hero';
+import Capabilities from '@/components/Capabilities';
+import QualityAssurance from '@/components/QualityAssurance';
+import InquiryForm from '@/components/InquiryForm';
+import Footer from '@/components/Footer';
+import { Toaster } from '@/components/ui/toaster';
+
+function App() {
+  return (
+    <>
+      <Helmet>
+        <title>Primebrio Industries - Custom Wire Harness & Cable Assembly Manufacturer</title>
+        <meta name="description" content="Precision interconnect solutions from prototype to production. Custom wire harnessing, robotic drag chain assembly, and electromechanical integration built to IPC/WHMA-A-620 standards in Ahmedabad, India." />
+      </Helmet>
+      <div className='min-h-screen bg-white'>
+        <Header />
+        <main>
+          <Hero />
+          <Capabilities />
+          <QualityAssurance />
+          <InquiryForm />
+        </main>
+        <Footer />
+        <Toaster />
+      </div>
+    </>
+  );
+}
+
+export default App;
